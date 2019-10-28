@@ -4,13 +4,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>551de0fd-d6e1-4fa9-8ffc-4121c8ad54ad</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>cshogi_gym.py</StartupFile>
+    <StartupFile>cshogi_gym\dqn.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>cshogi_gym</Name>
     <RootNamespace>cshogi_gym</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +23,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="cshogi_gym.py" />
+    <Compile Include="cshogi_gym\dqn.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="cshogi_gym\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
