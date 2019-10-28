@@ -308,7 +308,7 @@ for i_episode in range(num_episodes):
     env.reset()
     state = get_state(env)
     #env.render('sfen')
-    kif.open(os.path.join('kifu', datetime.datetime.now().strftime('%Y%m%d%H%M%S') + '.kif'))
+    kif.open(os.path.join('kifu', datetime.datetime.now().strftime('%Y%m%d%H%M%S') + '.kifu'))
     kif.header(['dqn', 'dqn'])
     
     for t in count():
