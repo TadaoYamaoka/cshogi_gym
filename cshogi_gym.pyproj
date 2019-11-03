@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>551de0fd-d6e1-4fa9-8ffc-4121c8ad54ad</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>cshogi_gym\dqn.py</StartupFile>
+    <StartupFile>cshogi_gym\dqn_parallel.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,9 +24,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="cshogi_gym\dqn.py" />
+    <Compile Include="cshogi_gym\dqn_parallel.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="cshogi_gym\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cshogi_gym\features.pyx">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
